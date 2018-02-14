@@ -39,7 +39,7 @@ p {
 
 .home {
     height: 100%;
-    background: url(/images/MintLeaves_Roofs_PatternBackground.svg) #f05423;
+    background: url(../images/MintLeaves_Roofs_PatternBackground.svg) #f05423;
     background-size: cover;
 }
 
@@ -140,6 +140,17 @@ li.active {
 .sub_menu_section {
     display: flex;
     flex-wrap: wrap;
+    border-bottom: 2px solid #fff;
+}
+
+.sub_menu_section:last-of-type {
+    border-bottom: none;
+}
+
+@media all and (max-width:671px){
+    .sub_menu_section {
+        border-bottom: none;
+    }
 }
 
 .sub_menu_section:nth-child(2n+3){
@@ -147,22 +158,22 @@ li.active {
 }
 
 .chaat_img {
-    background: url('/images/sample_foods/Delhi_Chaat.jpg');
+    background: url('../images/sample_foods/Delhi_Chaat.jpg');
     background-position: 70% 40%;
 }
 
 .puri_img {
-    background: url('/images/sample_foods/Puri.jpg');
+    background: url('../images/sample_foods/Puri.jpg');
     background-position: center 60%;
 }
 
 .paan_img {
-    background: url('/images/sample_foods/Paan.jpg');
+    background: url('../images/sample_foods/Paan.jpg');
     background-position: center 80%;
 }
 
 .dishes_img {
-    background: url('/images/sample_foods/Papdi_Chaat.jpg');
+    background: url('../images/sample_foods/Papdi_Chaat.jpg');
     background-position: center center;
 }
 
@@ -277,7 +288,7 @@ li.active {
 }
 
 .findus .map {
-    flex: 3 1 500px;
+    flex: 15 1 500px;
     min-height: 285px;
 }
 
