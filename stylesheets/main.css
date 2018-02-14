@@ -305,7 +305,7 @@ li.active {
 
 /* Hover effects ----------------------------------------------------*/
 
-body.hasHover .info > a:hover {
+body.hasHover .findus_info > a:hover {
     background: rgba(255,255,255,.1)
 }
 
