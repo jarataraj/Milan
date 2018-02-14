@@ -76,7 +76,7 @@ nav li {
     font: 1.5rem 'Fjalla One', sans-serif;
 }
 
-nav a:hover li{
+body.hasHover nav a:hover li{
     border-bottom: .2em solid #f2f2f2;
     padding-bottom: .1em;
 }
@@ -305,7 +305,7 @@ li.active {
 
 /* Hover effects ----------------------------------------------------*/
 
-.info > a:hover {
+body.hasHover .info > a:hover {
     background: rgba(255,255,255,.1)
 }
 
