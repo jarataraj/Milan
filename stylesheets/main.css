@@ -147,6 +147,12 @@ li.active {
     border-bottom: none;
 }
 
+@media all and (max-width:671px){
+    .sub_menu_section {
+        border-bottom: none;
+    }
+}
+
 .sub_menu_section:nth-child(2n+3){
     flex-direction: row-reverse;
 }
