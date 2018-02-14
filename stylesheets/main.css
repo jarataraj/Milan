@@ -140,6 +140,11 @@ li.active {
 .sub_menu_section {
     display: flex;
     flex-wrap: wrap;
+    border-bottom: 2px solid #fff;
+}
+
+.sub_menu_section:last-of-type {
+    border-bottom: none;
 }
 
 .sub_menu_section:nth-child(2n+3){
