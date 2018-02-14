@@ -209,7 +209,7 @@ li.active {
     bottom: 0;
     width: 100%;
     text-align: center;
-    font: 3em serif; 
+    font: 3em "Times New Roman", "Garamond", serif; 
 }
 
 .sub_menu_description {
