@@ -10,6 +10,7 @@ Dark Grey = #333
 
 html, body {
     height: 100%;
+    background: #333;
 }
 
 a {
@@ -59,6 +60,8 @@ nav {
     width: 100%;
     background: #333;
     transition: all .5s linear;
+/*    background: linear-gradient(0deg, #000, #333)*/
+/*    border-bottom: 3px solid #f05423;*/
 }
 
 nav ul {
@@ -110,20 +113,31 @@ li.active {
 
 .about img {
     min-width: 0;
-    flex: 1 1 470px;
+    flex: 1 1 500px;
     width: 100%;
-    max-width: 750px;
+    max-width: 830px;
 /*    border: solid 2px red;*/
 }
 
 .about_info {
     padding-bottom: 1rem;
-    flex: 1 1 300px;
+    flex: 1 1 330px;
 }
 
 .about p {
     padding: 1rem;
 }
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about .social_icon {
+    margin-right: 1rem;
+}
+
 
 /*=====Menu Section==========================================================*/
 
@@ -134,14 +148,15 @@ li.active {
 }
 
 .menu .section_title {
-    background: hsl(14.3, 87.2%, 53.9%);
+    background: #F05423;
     padding-top: .4rem;
 }
 
 .sub_menu_section {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 2px solid rgba(255,255,255,.85);
+    overflow: hidden;
 }
 
 .sub_menu_section:last-of-type {
@@ -190,6 +205,7 @@ li.active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient(0deg, #333, rgba(0,0,0,.2));
 }
 
 .sub_menu_header {
@@ -203,7 +219,7 @@ li.active {
 }
 
 .sub_menu_title {
-    color: white;
+    color: #fff;
     margin: 0;
     position: absolute;
     bottom: 0;
@@ -213,7 +229,7 @@ li.active {
 }
 
 .sub_menu_description {
-    color: white;
+    color: rgba(255,255,255,.9);
     margin: 0;
     font: 1em 'Montserrat';
     position:absolute;
@@ -236,6 +252,7 @@ li.active {
 
 .menu p {
     font-size: .8rem;
+    color: rgba(255, 255, 255, .8);
     padding: .2em 0;
     margin-bottom: 1rem;
     text-transform: lowercase;
@@ -249,9 +266,11 @@ li.active {
     align-items: stretch;
     background: #f05423;
     height: calc(100% - 44px);
+    min-height: 300px;
 }
 
 .findus_info {
+    position: relative;
     flex: 1 1 331px;
     display:flex;
     flex-flow: column nowrap;
@@ -267,7 +286,7 @@ li.active {
 }
 .findus img {
     margin-left: 2rem;
-    height: 2.2rem;
+    height: 2rem;
 }
 
 .spacing_fix {
@@ -281,7 +300,6 @@ li.active {
 .social_media_icon_bar {
     padding: .5rem 0;
     width: 100%;
-    align-self: flex-end;
     margin-top: auto;
     background: #333;
     display: flex;
@@ -293,14 +311,35 @@ li.active {
     min-height: 285px;
 }
 
+.orange_space {
+    flex: 1 1 0;
+}
+
+.green_space {
+    flex: 4 1 0;
+    background: #86C441;
+}
+
+@media all and (max-width: 848px) {
+    .orange_space, .green_space {
+        display: none
+    }
+    
+    .social_media_icon_bar {
+        margin-top: auto;
+    }
+}
+
 /* Fix for social media icon hitboxes -------------------------------*/
 
-.social_icon {
+.findus .social_icon {
     margin-left: 2rem;
 }
 .social_icon img {
+    height: 2.3rem;
+    width: 2.3rem;
     margin-left: 0;
-    display: block; /*removes space beneath*/
+    display: block; /* removes space beneath */
 }
 
 /* Hover effects ----------------------------------------------------*/
